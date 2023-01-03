@@ -1,0 +1,14 @@
+{
+  "name": "image-reviewer",
+  "version": "0.2.0",
+  "description": "A desktop file explorer with keyboard shortcuts to quickly prep images when collecting datasets for training image classification models",
+  "license": "MIT",
+  "author": "Towhid Kashem",
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {}
+}

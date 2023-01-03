@@ -1,0 +1,13 @@
+node_modules
+coverage
+
+yarn-lock.json
+.eslintcache
+
+*.min.*
+*.map
+
+.erb/dll
+release/app/dist
+release/build
+ImageReviewer.app
